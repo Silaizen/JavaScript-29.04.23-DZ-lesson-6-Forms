@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/1.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- 1 task -->
+    <!-- <div class="mes-list" id="messageList"></div>
+	  <h1>add new message</h1>
+	  <div class="container-mas">
+		  <form  id="messageForm" method="get">
+			  <label for="author">User:</label>
+			  <input type="text" id="author" required /><br /><br />
+			  
+			  <label for="content">Message:</label><br />
+        <textarea id="content" rows="4" required></textarea><br />
+
+        <button type="submit">Send</button>
+      </form>
+    </div> -->
+
+    <!-- 2 task -->
+    <!-- <h1>Проходження тесту</h1>
+  <div class="container-test">
+
+    <form id="testForm">
+      <h3>Питання 1:</h3>
+      <p>Яка столиця України?</p>
+      <label for="q1a">
+        <input type="radio" id="q1a" name="question1" value="a">
+        Київ
+      </label><br>
+      <label for="q1b">
+        <input type="radio" id="q1b" name="question1" value="b">
+        Львів
+      </label><br>
+     
+  
+      <h3>Питання 2:</h3>
+      <p>Скільки планет у Сонячній системі?</p>
+      <label for="q2a">
+        <input type="radio" id="q2a" name="question2" value="a">
+        8
+      </label><br>
+      <label for="q2b">
+        <input type="radio" id="q2b" name="question2" value="b">
+        9
+      </label><br>
+      
+  
+      <button type="button" onclick="checkAnswers()">Завершити тест</button>
+    </form>
+  </div>
+
+  <div id="result"></div> -->
+
+    <!-- 3 task -->
+    <!-- <div class="container-test-style">
+      <form id="textForm">
+        <label for="textInput">Введіть текст:</label>
+        <textarea id="textInput" required></textarea>
+
+        <div class="checkbox-group">
+          <div class="checkbox-item">
+            <label for="boldCheckbox">Bold</label>
+            <input type="checkbox" id="boldCheckbox" />
+          </div>
+          <div class="checkbox-item">
+            <label for="underlineCheckbox">Underline</label>
+            <input type="checkbox" id="underlineCheckbox" />
+          </div>
+          <div class="checkbox-item">
+            <label for="italicsCheckbox">Italics</label>
+            <input type="checkbox" id="italicsCheckbox" />
+          </div>
+          <div class="checkbox-item">
+            <label for="alignmentLeft">Left</label>
+            <input type="checkbox" id="alignmentLeft" name="alignment" value="left" />
+          </div>
+          <div class="checkbox-item">
+            <label for="alignmentRight">Right</label>
+            <input type="checkbox" id="alignmentRight" name="alignment" value="right" />
+          </div>
+          <div class="checkbox-item">
+            <label for="alignmentJustify">Justify</label>
+            <input type="checkbox" id="alignmentJustify" name="alignment" value="justify" />
+          </div>
+        </div>
+        <button type="submit">Вивести текст</button>
+      </form>
+    </div>
+    <div class="container-res">
+      <p>Результат:</p>
+      <div class="text-preview" id="textPreview"></div>
+    </div> -->
+
+    <!-- 4 task -->
+    <!-- <h1>Магазин книг</h1>
+    <div class="main-container">
+      <form id="orderForm">
+          <p>Оберіть книгу:</p>
+        <div id="bookPreviews">
+          <div class="book-preview">
+            <figure>
+              <img src="/img/1.jpg" alt="Книга 1" />
+              <figcaption>
+                <label data-book-title="Кэти Сьерра и Берт Бейтс 'Изучаем Java'">
+                  Кэти Сьерра и Берт Бейтс "Изучаем Java"
+                </label>
+                <span class="book-price">Цена: $600</span>
+                <button
+                  class="select-button"
+                  data-book-title="Кэти Сьерра и Берт Бейтс 'Изучаем Java'"
+                >
+                  Выбрать
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="book-preview">
+            <figure>
+              <img src="/img/2.jpg" alt="Книга 2" />
+              <figcaption>
+                <label
+                  data-book-name=" Стенли Б. Липпман, Жози Лажойе, Барбара Э. Му 'Язык C++.'"
+                >
+                  Стенли Б. Липпман, Жози Лажойе, Барбара Э. Му "Язык C++."
+                </label>
+                <span class="book-price">Цена: $900</span>
+                <button
+                  class="select-button"
+                  data-book-title=" Стенли Б. Липпман, Жози Лажойе, Барбара Э. Му 'Язык C++.'"
+                >
+                  Выбрать
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="book-preview">
+            <figure>
+              <img src="/img/3.jpg" alt="Книга 3" />
+              <figcaption>
+                <label
+                  data-book-name="Джошуа Блох Java. 'Эффективное программирование'"
+                >
+                  Джошуа Блох "Java. Эффективное программирование"
+                </label>
+                <span class="book-price">Цена: $200</span>
+                <button
+                  class="select-button"
+                  data-book-title=" Джошуа Блох 'Java. Эффективное программирование'"
+                >
+                  Выбрать
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+         <div class="container-lab">
+
+           <label  for="books">
+             Книга:
+             <input class="books-name" name="book" type="text" id="books" required  />
+             
+           </label>
+   
+           <label for="quantityInput">
+             Кількість екземплярів:
+             <input type="number" id="quantityInput" required  />
+           </label>
+           
+           <label for="nameInput">
+             Введіть своє ім'я:
+             <input type="text" id="nameInput" required />
+           </label>
+   
+           <label for="dateInput">
+             Дата доставки:
+             <input type="date" id="dateInput" required />
+           </label>
+   
+           <label for="addressInput">Адреса доставки:</label>
+           <input type="text" id="addressInput" required />
+   
+           <label for="commentInput">Коментар:</label>
+           <textarea id="commentInput"></textarea>
+   
+           <button type="submit">Замовити</button>
+         
+         
+         <div id="orderResultContainer">
+           <div id="orderResult"></div>
+          </div>
+        </div>
+      </form>
+    </div> -->
+   
+    <!-- 5 task  -->
+    <!-- <h1>Відмітити присутніх на парі</h1>
+
+  <h2>Додати нову пару</h2>
+  <form id="addForm">
+    <label for="groupSelect">Група:</label>
+    <select id="groupSelect" required>
+      <option value="">Оберіть групу</option>
+      <option value="Група V318">V318</option>
+      <option value="Група B210">B210</option>
+      <option value="Група G121">G121</option>
+    </select>
+
+    <label for="lessonSelect">Пара:</label>
+    <select id="lessonSelect" required>
+      <option value="">Оберіть пару</option>
+      <option value="Пара 1">Пара 1</option>
+      <option value="Пара 2">Пара 2</option>
+      <option value="Пара 3">Пара 3</option>
+    </select>
+
+    <label for="topicInput">Тема заняття:</label>
+    <input type="text" id="topicInput" required />
+
+    <h3>Присутність:</h3>
+    <div id="studentsList"></div>
+
+    <button type="submit">Зберегти</button>
+  </form>
+
+  <h2>Переглянути відмічені пари</h2>
+  <button id="viewButton">Переглянути</button>
+  <div id="attendanceList"></div>
+    -->
+
+    <!-- 6 task -->
+    <!-- <div class="container-ticket">
+
+      <h1>Бронювання квитків на поїзд</h1>
+  
+      <h2>Форма бронювання</h2>
+      <form id="bookingForm">
+        <label for="origin">Звідки:</label>
+        <select id="origin" name="origin">
+          <option value="Київ">Київ</option>
+          <option value="Львів">Львів</option>
+          <option value="Одеса">Одеса</option>
+          <option value="Тернопіль">Тернопіль</option>
+          <option value="Харків">Харків</option>
+          <option value="Ужгород">Ужгород</option>
+        </select>
+        <br>
+        <label for="destination">Куди:</label>
+        <select id="destination" name="destination">
+          <option value="Київ">Київ</option>
+          <option value="Львів">Львів</option>
+          <option value="Одеса">Одеса</option>
+          <option value="Тернопіль">Тернопіль</option>
+          <option value="Харків">Харків</option>
+          <option value="Ужгород">Ужгород</option>
+        </select>
+        <br>
+        <label for="date">Дата поїздки:</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <h3>Місця для броні:</h3>
+        <table id="seatsTable">
+          <tr>
+            <td><input type="checkbox" name="seat" value="1">1</td>
+            <td><input type="checkbox" name="seat" value="3">3</td>
+            <td><input type="checkbox" name="seat" value="5">5</td>
+            <td><input type="checkbox" name="seat" value="7">7</td>
+            <td><input type="checkbox" name="seat" value="9">9</td>
+            <td><input type="checkbox" name="seat" value="11">11</td>
+            <td><input type="checkbox" name="seat" value="13">13</td>
+            <td><input type="checkbox" name="seat" value="15">15</td>
+            <td><input type="checkbox" name="seat" value="17">17</td>
+            <td><input type="checkbox" name="seat" value="19">19</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="seat" value="2">2</td>
+            <td><input type="checkbox" name="seat" value="4">4</td>
+            <td><input type="checkbox" name="seat" value="6">6</td>
+            <td><input type="checkbox" name="seat" value="8">8</td>
+            <td><input type="checkbox" name="seat" value="10">10</td>
+            <td><input type="checkbox" name="seat" value="12">12</td>
+            <td><input type="checkbox" name="seat" value="14">14</td>
+            <td><input type="checkbox" name="seat" value="16">16</td>
+            <td><input type="checkbox" name="seat" value="18">18</td>
+            <td><input type="checkbox" name="seat" value="20">20</td>
+          </tr>
+        </table>
+        <br>
+        <input type="submit" value="Забронювати">
+      </form>
+    
+      <h2>Заброньовані квитки</h2>
+      <table id="bookingTable">
+        <tr>
+          <th>Звідки</th>
+          <th>Куди</th>
+          <th>Дата</th>
+          <th>Місце</th>
+        </tr>
+      </table>
+    </div> -->
+
+  <script src="/JS/1.js"></script>
+  </body>
+</html>
